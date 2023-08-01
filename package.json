@@ -1,0 +1,30 @@
+{
+  "name": "coconut-xr-template",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@coconut-xr/apfel-kruemel": "^0.0.3",
+    "@coconut-xr/koestlich": "^0.3.6",
+    "@coconut-xr/lucide-koestlich": "^0.0.2",
+    "@coconut-xr/natuerlich": "^0.0.24",
+    "@react-three/fiber": "^8.13.4",
+    "three": "^0.154.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/three": "^0.152.1",
+    "@types/uuid": "^9.0.2",
+    "@vitejs/plugin-react": "^4.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vite-plugin-mkcert": "^1.16.0"
+  }
+}
