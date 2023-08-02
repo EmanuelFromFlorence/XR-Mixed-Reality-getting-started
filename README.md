@@ -19,13 +19,13 @@ For the basic development setup, please fork and clone this repository and use `
 <details>
   <summary>Learn more about the dependencies we use.</summary>
 
-We leverage a set of libraries that simplify building our application. In particular, we use `@coconut-xr/koestlich` for building the user interface, `@coconut-xr/apfel-kruemel` for a set of pre-designed components, such as Lists, `@coconut-xr/lucide-koestlich` for icons, `@coconut-xr/natuerlich` for interactivity, and `@react-three/fiber` and `three` for handling the rendering. This template uses `vite` to build the application.
+We leverage a set of libraries that simplify building our application. In particular, we use `@coconut-xr/koestlich` for building the user interface, `@coconut-xr/apfel-kruemel` for a set of pre-designed components, such as lists, `@coconut-xr/lucide-koestlich` for icons, `@coconut-xr/natuerlich` for interactivity, and `@react-three/fiber` and `three` for handling the rendering. This template uses `vite` to build the application.
 
 </details>
 
-Using the command `npm run dev`, we can start the development server and access the page in the browser to see the application containing an empty canvas for now.
+Using the command `npm run dev` we can start the development server and access the page in the browser to see the application containing an empty canvas for now.
 
-The following code shows the current setup inside the `app.tsx` file. The file currently contains the `XRCanvas` imported from `@coconut-xr/natuerlich/defaults`. The canvas is configured to fill the whole screen, and unwanted interactions are disabled using the `cssStyle`.
+The following code shows the current setup inside the `app.tsx` file. The file currently contains the `XRCanvas` imported from `@coconut-xr/natuerlich/defaults`. The canvas is configured to fill the whole screen and unwanted interactions are disabled using the `cssStyle`.
 
 ```tsx
 import { XRCanvas } from "@coconut-xr/natuerlich/defaults";
@@ -85,7 +85,7 @@ export default function Index() {
 
 ## Adding the AR & VR buttons
 
-Next, we enable the user to enter the application via an AR and VR device. Therefore, we create `enterAR` and `enterVR` functions to enter a VR or AR session from the `AR` and `VR` buttons. For creating these functions, we need to define the `sessionOptions`. In this case, we'll set `"local-floor"` and `"hand-tracking"` as required features. With the `sessionOptions`, we can now use the `useEnterXR` hook to create the enter functions for AR and VR. We will then use these functions in the onClick handler of two buttons that will be appended to the end of the interface. We'll position these buttons absolutely in the top-left corner of the screen. After that, we'll add an `ImmersiveSessionOrigin`, allowing us to place the origin of the player in the 3D scene; by default, it is set at coordinates `0,0,0`. Inside this origin, we'll add the default `Hands` and `Controllers`, allowing the user to rotate, resize, and reposition the glass panel in both VR and AR. This integration ensures a seamless and interactive user experience across different virtual environments.
+Next, we enable the user to enter the application via an AR and VR device. Therefore, we create `enterAR` and `enterVR` functions to enter a VR or AR session from the `AR` and `VR` buttons. For creating these functions, we need to define the `sessionOptions`. In this case we'll set `"local-floor"` and `"hand-tracking"` as required features. With the `sessionOptions` we can now use the `useEnterXR` hook to create the enter functions for AR and VR. We will then use these functions in the onClick handler of two buttons that will be appended to the end of the interface. We'll position these buttons absolutely in the top-left corner of the screen. After that, we'll add an `ImmersiveSessionOrigin`, allowing us to place the origin of the player in the 3D scene; by default, it is set at coordinates `0,0,0`. Inside this origin, we'll add the default `Hands` and `Controllers`, allowing the user to rotate, resize, and reposition the glass panel in both VR and AR. This integration ensures a seamless and interactive user experience across different virtual environments.
 
 ![Screenhot](./ar-vr.gif)
 
