@@ -6,7 +6,7 @@ In this getting started tutorial, we build a simple, immersive, draggable music 
 
 _If you encounter problems during this tutorial, please visit our [Discord](https://discord.com/invite/NCYM8ujndE) for help._
 
-This Tutorial Goes over the basics for the individual libraries of the Coconut-XR Ecosystem. If you are interested in one library specifically, please check out the documentations for the respective libraries:
+This tutorial goes over the basics for the individual libraries of the Coconut-XR Ecosystem. If you are interested in one library specifically, please check out the documentations for the respective libraries:
 
 - User Interface Library - [Koestlich](https://coconut-xr.github.io/koestlich/)
 - WebXR Interaction Library - [Natuerlich](https://coconut-xr.github.io/natuerlich/)
