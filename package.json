@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "@coconut-xr/apfel-kruemel": "^0.0.3",
-    "@coconut-xr/koestlich": "^0.3.6",
+    "@coconut-xr/koestlich": "^0.3.7",
     "@coconut-xr/lucide-koestlich": "^0.0.2",
-    "@coconut-xr/natuerlich": "^0.0.24",
+    "@coconut-xr/natuerlich": "^0.0.25",
     "@react-three/fiber": "^8.13.4",
     "three": "^0.154.0",
     "uuid": "^9.0.0"
