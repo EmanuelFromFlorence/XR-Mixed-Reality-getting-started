@@ -1,6 +1,6 @@
 # :beginner: Getting started using the Coconut-XR Ecosystem
 
-In this getting started tutorial, we build a simple, immersive draggable music player.
+In this getting started tutorial, we build a simple, immersive, draggable music player.
 
 ![Screenshot](./mini-player.gif)
 
@@ -19,7 +19,7 @@ For the basic development setup, please fork and clone this repository and use `
 <details>
   <summary>Learn more about the dependencies we use.</summary>
 
-We leverage a set of libraries that simplify building our application. Specifically, we use `@coconut-xr/koestlich` for building the user interface, `@coconut-xr/apfel-kruemel` for a set of pre-designed components, such as Lists, `@coconut-xr/lucide-koestlich` for icons, `@coconut-xr/natuerlich` for interactivity, and `@react-three/fiber` and `three` for handling the rendering. This template uses `vite` to build the application.
+We leverage a set of libraries that simplify building our application. In particular, we use `@coconut-xr/koestlich` for building the user interface, `@coconut-xr/apfel-kruemel` for a set of pre-designed components, such as lists, `@coconut-xr/lucide-koestlich` for icons, `@coconut-xr/natuerlich` for interactivity, and `@react-three/fiber` and `three` for handling the rendering. This template uses `vite` to build the application.
 
 </details>
 
@@ -43,8 +43,7 @@ export default function Index() {
 }
 ```
 
-
-*The final code for this tutorial can be found under `app-final.tsx`.*
+*The final code for this tutorial can be found in `app-final.tsx`.*
 
 ## Adding a glass panel
 
@@ -147,7 +146,7 @@ export default function Index() {
 
 ## Adding the user interface elements of the music player
 
-Next up, we fill the glass panel with content. We begin by reducing the padding of the glass panel to `10px`. Then, we add a `DefaultStyleProvider`, setting the default color for all texts and icons inside it to `"white"`. Afterward, we incorporate an image component wrapped in a suspense mechanism, ensuring it loads the image from `"image.jpg"` inside the `public` folder. We manually set the `index` of the image to `0`, assuring the correct order while the image is loaded asynchronously. Lastly, we enrich the content by adding the album name and the artist name, utilizing the `Text` component. By carefully assembling these elements, we achieve a visually appealing and functional design for the glass panel.
+Next up, we fill the glass panel with content. We begin by reducing the padding of the glass panel to `10px`. Then, we add a `DefaultStyleProvider`, setting the default color for all texts and icons inside it to `"white"`. Afterward, we incorporate an image component wrapped in a suspense mechanism, ensuring it loads the image from `"image.jpg"` inside the `public` folder. We manually set the `index` of the image to `0`, assuring the correct order while the image is loaded asynchronously. Finally, we enrich the content with the name of the album and the artist by using the `Text` component. By carefully assembling these elements, we achieve a visually appealing and functional design for the glass panel.
 
 ![Screenshot](./ui-elements.jpeg)
 
@@ -246,8 +245,8 @@ export default function Index() {
 }
 ```
 
-And that is it. If you made it this far, congratulations! If you are curious to learn more, visit our [Discord](https://discord.com/invite/NCYM8ujndE) or learn more about the libraries we just used in their respective documentations
+And that is it! If you made it this far, congratulations! If you are curious to learn more, visit our [Discord](https://discord.com/invite/NCYM8ujndE) or learn more about the libraries we just used in their respective documentations:
 
 - User Interface Library - [Koestlich](https://coconut-xr.github.io/koestlich/)
 - WebXR Interaction Library - [Natuerlich](https://coconut-xr.github.io/natuerlich/)
-- Pre-designed Component Library - [Apfel Krumel](https://github.com/coconut-xr/apfel-kruemel).
+- Pre-designed Component Library - [Apfel Kruemel](https://github.com/coconut-xr/apfel-kruemel).
