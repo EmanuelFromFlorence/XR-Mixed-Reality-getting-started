@@ -25,7 +25,7 @@ We leverage a set of libraries that simplify building our application. In partic
 
 Using the command `npm run dev`, we can start the development server and access the page in the browser to see the application containing an empty canvas for now.
 
-The following code shows the current setup inside the `app.tsx` file. The file currently contains the `XRCanvas` imported from `@coconut-xr/natuerlich/defaults`. The canvas is configured to fill the whole screen and unwanted interactions are disabled using the `cssStyle`.
+The following code shows the current setup inside the `app.tsx` file. The file currently contains the `XRCanvas` imported from `@coconut-xr/natuerlich/defaults`. The canvas is configured to fill the whole screen, and unwanted interactions are disabled using the `cssStyle`.
 
 ```tsx
 import { XRCanvas } from "@coconut-xr/natuerlich/defaults";
@@ -146,7 +146,7 @@ export default function Index() {
 
 ## Adding the user interface elements of the music player
 
-Next up, we fill the glass panel with content. We begin by reducing the padding of the glass panel to `10px`. Then, we add a `DefaultStyleProvider`, setting the default color for all texts and icons inside it to `"white"`. Afterwards, we incorporate an image component wrapped in a suspense mechanism, ensuring it loads the image from `"image.jpg"` inside the `public` folder. We manually set the `index` of the image to `0`, assuring the correct order while the image is loaded asynchronously. Finally, we enrich the content with the name of the album and the artist by using the `Text` component. By carefully assembling these elements, we achieve a visually appealing and functional design for the glass panel.
+Next up, we fill the glass panel with content. We begin by reducing the padding of the glass panel to `10px`. Then, we add a `DefaultStyleProvider`, setting the default color for all texts and icons inside it to `"white"`. Afterward, we incorporate an image component wrapped in a suspense mechanism, ensuring it loads the image from `"image.jpg"` inside the `public` folder. We manually set the `index` of the image to `0`, assuring the correct order while the image is loaded asynchronously. Finally, we enrich the content with the name of the album and the artist by using the `Text` component. By carefully assembling these elements, we achieve a visually appealing and functional design for the glass panel.
 
 ![Screenshot](./ui-elements.jpeg)
 
