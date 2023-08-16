@@ -10,7 +10,7 @@ This tutorial goes over the basics for the individual libraries of the Coconut-X
 
 - User Interface Library - [Koestlich](https://coconut-xr.github.io/koestlich/)
 - WebXR Interaction Library - [Natuerlich](https://coconut-xr.github.io/natuerlich/)
-- Pre-designed Component Library - [Apfel Krumel](https://github.com/coconut-xr/apfel-kruemel).
+- Pre-designed Component Library - [Apfel Kruemel](https://github.com/coconut-xr/apfel-kruemel).
 
 ## Development Setup
 
